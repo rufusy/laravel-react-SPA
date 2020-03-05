@@ -18,6 +18,6 @@ Route::get('reset-password', function(){
 
 
 // Catch all other web routes
-Route::get('{any}', function($any){
+Route::get('{any}', function(){
     return view('index');
 })->where('any', '^(?!api).*$');
